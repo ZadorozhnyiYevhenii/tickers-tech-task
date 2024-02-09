@@ -36,3 +36,119 @@
     transform: rotate(360deg);
   }
 }
+
+.graph-bar {
+  background-color: #6b46c1;
+  border: 1px solid #cbd5e0;
+  width: 10px;
+}
+
+.graph-container {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid #cbd5e0;
+  border-left: 1px solid #cbd5e0;
+  height: 180px;
+  width: 80vw;
+  margin-top: 14px;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ticker-card {
+  margin-bottom: 80px;
+  border: 1px solid gray;
+}
+
+.label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.ticker-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.ticker-card {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.ticker-change-percent {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  color: green;
+}
+
+.ticker-change-percent--down {
+  color: red;
+}
+
+.ticker-card:hover {
+  border-color: #333;
+}
+
+.ticker-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ticker-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.delete-button {
+  background-color: #eee;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #ccc;
+}
+
