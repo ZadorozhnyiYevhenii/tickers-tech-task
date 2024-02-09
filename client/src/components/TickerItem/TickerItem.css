@@ -1,0 +1,36 @@
+.ticker-card {
+  margin-bottom: 80px;
+  border: 1px solid gray;
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.ticker-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ticker-change-percent {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  color: green;
+}
+
+.ticker-change-percent--down {
+  color: red;
+}
+
+.ticker-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
