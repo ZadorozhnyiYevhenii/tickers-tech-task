@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App.jsx";
+import { Provider } from 'react-redux'
+import { store } from "./store/store.js";
 import "./styles/tailwind.css";
-import { Provider } from "react-redux";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Provider>
-      <App />
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById("root")
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
 );

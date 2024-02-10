@@ -9,6 +9,12 @@
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.ticker-card:hover {
+  border-color: #333;
 }
 
 .ticker-title {

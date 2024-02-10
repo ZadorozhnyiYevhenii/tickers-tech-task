@@ -1,9 +1,19 @@
+import { useDispatch } from 'react-redux'
 import cn from "classnames";
+import { clearGraphData, setSelectedTicker } from '../../store/slices/tickerSlice';
 import './TickerItem.css';
 
-export const TickerItem = ({ ticker, selectTicker }) => {
+
+export const TickerItem = ({ ticker}) => {
+  const dispatch = useDispatch();
+
+  const selectTicker = (ticker) => {
+    dispatch(setSelectedTicker(ticker));
+    dispatch(clearGraphData());
+  };
+
   return (
-    <div
+    <li
       key={ticker.ticker}
       onClick={() => selectTicker(ticker)}
       className="ticker-card"
@@ -17,6 +27,6 @@ export const TickerItem = ({ ticker, selectTicker }) => {
         {ticker.change}%
       </div>
       <div className="ticker-price">{ticker.price}$</div>
-    </div>
+    </li>
   );
 };

@@ -5,6 +5,7 @@ export const tickerSlice = createSlice({
   initialState: {
     selected: null,
     graph: [],
+    tickers: []
   },
   reducers: {
     setSelectedTicker: (state, action) => {
@@ -16,12 +17,12 @@ export const tickerSlice = createSlice({
     clearGraphData: (state) => {
       state.graph = [];
     },
+    setTickers: (state, action) => {
+      state.tickers = action.payload;
+    },
   },
 });
 
-export const { setSelectedTicker, setGraphData, clearGraphData } = tickerSlice.actions;
-
-export const selectSelectedTicker = (state) => state.ticker.selected;
-export const selectGraphData = (state) => state.ticker.graph;
+export const { setSelectedTicker, setGraphData, clearGraphData, setTickers } = tickerSlice.actions;
 
 export const tickersReducer = tickerSlice.reducer;

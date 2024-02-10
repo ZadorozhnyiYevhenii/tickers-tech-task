@@ -1,0 +1,14 @@
+.graph-container {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid #cbd5e0;
+  border-left: 1px solid #cbd5e0;
+  height: 180px;
+  margin-top: 14px;
+}
+
+.graph-bar {
+  background-color: #6b46c1;
+  border: 1px solid #cbd5e0;
+  width: 10px;
+}
