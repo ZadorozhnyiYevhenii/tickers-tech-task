@@ -25,7 +25,6 @@ Stock Ticker App is a web application that allows users to track real-time stock
     - `slices`
     - `thunks`
   - `utils/`
-  - `
   - `helpers`
   - `tests`
   - `App.js`
