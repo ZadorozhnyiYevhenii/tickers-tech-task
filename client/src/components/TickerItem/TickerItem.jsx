@@ -3,8 +3,7 @@ import cn from "classnames";
 import { clearGraphData, setSelectedTicker } from '../../store/slices/tickerSlice';
 import './TickerItem.css';
 
-
-export const TickerItem = ({ ticker}) => {
+export const TickerItem = ({ ticker }) => {
   const dispatch = useDispatch();
 
   const selectTicker = (ticker) => {
@@ -18,15 +17,17 @@ export const TickerItem = ({ ticker}) => {
       onClick={() => selectTicker(ticker)}
       className="ticker-card"
     >
-      <div className="ticker-title">{ticker.ticker} - USD</div>
+      <div className="ticker-title" data-testid='ticker-title'>{ticker.ticker} - USD</div>
       <div
         className={cn("ticker-change-percent", {
           "ticker-change-percent--down": ticker.change < 10,
         })}
+        data-testid='ticker-change-percent'
       >
         {ticker.change}%
       </div>
-      <div className="ticker-price">{ticker.price}$</div>
+      <div className='ticker-exchange'>{ticker.exchange}</div>
+      <div className="ticker-price" data-testid='ticker-price'>{ticker.price}$</div>
     </li>
   );
 };

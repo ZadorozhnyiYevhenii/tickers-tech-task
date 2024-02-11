@@ -21,7 +21,6 @@
   font-size: 16px;
   font-weight: bold;
   color: #333;
-  margin-bottom: 10px;
 }
 
 .ticker-change-percent {
@@ -39,4 +38,9 @@
   font-size: 24px;
   font-weight: bold;
   color: #333;
+}
+
+.ticker-exchange {
+  font-size: 12px;
+  margin-bottom: 10px;
 }

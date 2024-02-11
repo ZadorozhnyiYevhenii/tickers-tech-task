@@ -23,6 +23,11 @@ export const tickerSlice = createSlice({
   },
 });
 
-export const { setSelectedTicker, setGraphData, clearGraphData, setTickers } = tickerSlice.actions;
+export const { 
+  setSelectedTicker, 
+  setGraphData, 
+  clearGraphData, 
+  setTickers,
+} = tickerSlice.actions;
 
 export const tickersReducer = tickerSlice.reducer;

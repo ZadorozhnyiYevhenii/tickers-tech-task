@@ -1,3 +1,8 @@
+.graph-section {
+  position: relative;
+  margin-bottom: 40px;
+}
+
 .graph-container {
   display: flex;
   align-items: flex-end;
@@ -11,4 +16,14 @@
   background-color: #6b46c1;
   border: 1px solid #cbd5e0;
   width: 10px;
+}
+
+.graph-title {
+  margin-top: 40px;
+}
+
+.graph-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

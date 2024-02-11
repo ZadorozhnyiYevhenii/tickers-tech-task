@@ -1,0 +1,15 @@
+.interval-input-container {
+  margin-bottom: 10px;
+}
+
+.interval-input-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-right: 16px;
+}
+
+.interval-input {
+  padding: 8px;
+  font-size: 14px;
+  width: 100px;
+}
