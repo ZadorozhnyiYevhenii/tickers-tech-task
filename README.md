@@ -13,9 +13,12 @@ Stock Ticker App is a web application that allows users to track real-time stock
 
 ## Technologies
 
-- React
+- React (18 version)
 - Redux Toolkit
+- Redux Thunk
 - Socket.io
+- Pure CSS
+- React testing library
 
 ## Project Structure
 
